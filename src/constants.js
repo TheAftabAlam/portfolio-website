@@ -15,7 +15,7 @@ import typescriptLogo from './assets/tech_logo/typescript.png';
 import githubLogo from './assets/tech_logo/github.png';
 import gitLogo from './assets/tech_logo/gitLogo.png';
 import dockerLogo from './assets/tech_logo/dockerLogo.png';
-dockerLogo
+import chatApp from './assets/tech_logo/chatApp.png';
 
 import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
@@ -174,7 +174,7 @@ export const projects = [
     id: 0,
     title: "Fitness AI Microservices",
     description:
-      "A full-stack AI-powered fitness platform built using Spring Boot microservices with event-driven communication via Apache Kafka. It manages users and activity tracking while generating intelligent fitness recommendations using AI integration. The backend follows database-per-service architecture using MySQL and MongoDB, demonstrating scalable, production-ready microservices with clean separation of concerns.",
+      "A production-grade AI-powered fitness platform built using Spring Boot microservices and Apache Kafka. The system follows database-per-service architecture with MySQL and MongoDB, enabling scalable user management, activity tracking, and AI-driven fitness recommendations through event-driven communication.",
     image: fitnessAiMicroservices,
     tags: [
       "Java",
@@ -191,26 +191,42 @@ export const projects = [
 
   {
     id: 1,
+    title: "Real-Time Chat Application",
+    description:
+      "A real-time group chat application built using Spring Boot and WebSocket, enabling instant message delivery and event-driven communication. The system demonstrates real-time messaging, REST-based user management, and scalable backend architecture.",
+    image: chatApp,
+    tags: [
+      "Java",
+      "Spring Boot",
+      "WebSocket",
+      "REST API",
+      "Real-Time Messaging",
+      "Event-Driven Architecture"
+    ],
+    github: "https://github.com/TheAftabAlam/team_chat_app"
+  },
+
+    {
+    id: 2,
     title: "Social Media API (Kafka-based)",
     description:
-      "A microservices-based messaging system built using Spring Boot and Apache Kafka. This project demonstrates real-time data streaming through Kafka producers and consumers, enabling asynchronous communication between services with fault tolerance, logging, and error handling. Designed for scalable, event-driven backend systems.",
+      "A scalable backend messaging system built using Spring Boot and Apache Kafka. Designed to demonstrate asynchronous communication, real-time data streaming, fault tolerance, and event-driven microservices architecture.",
     image: fbApi,
     tags: [
       "Java",
       "Spring Boot",
       "Kafka",
       "Microservices",
-      "Event-Driven",
-      "Messaging Systems"
+      "Event-Driven Systems"
     ],
     github: "https://github.com/TheAftabAlam/FaceBook-API"
   },
 
   {
-    id: 2,
-    title: "ShopEase - E-commerce Platform",
+    id: 3,
+    title: "ShopEase – E-commerce Platform",
     description:
-      "A full-stack e-commerce application with a strong backend built using Java, Spring Boot, Hibernate, and MySQL. It provides secure RESTful APIs for authentication, product management, cart handling, and order processing, along with role-based access control. Designed for scalable backend data handling and clean API architecture.",
+      "A full-stack e-commerce platform with a robust backend built using Java, Spring Boot, Hibernate, and MySQL. Provides secure REST APIs for authentication, product management, cart handling, and order processing with role-based access control.",
     image: se,
     tags: [
       "Java",
@@ -219,16 +235,16 @@ export const projects = [
       "MySQL",
       "REST API",
       "Authentication",
-      "Role-Based Access"
+      "RBAC"
     ],
     github: "https://github.com/TheAftabAlam/e-commerce"
   },
 
   {
-    id: 3,
-    title: "Nursery Plant API",
+    id: 4,
+    title: "Nursery Plant Management API",
     description:
-      "A backend RESTful API developed using Spring Boot, Hibernate, and MySQL for managing plant inventory, categories, customer orders, and authentication. The system exposes scalable CRUD endpoints with secure data persistence, following clean layered architecture principles.",
+      "A RESTful backend API developed using Spring Boot, Hibernate, and MySQL for managing plant inventory, categories, customer orders, and authentication, following clean layered architecture principles.",
     image: nursaryLogo,
     tags: [
       "Java",
@@ -242,10 +258,10 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Employee Management System",
     description:
-      "A backend-driven employee management system built using Spring Boot and MySQL, exposing RESTful APIs for employee CRUD operations. Integrated with an Angular frontend to demonstrate secure API communication, MVC architecture, and enterprise-level backend practices.",
+      "A backend-driven employee management system built using Spring Boot and MySQL, exposing RESTful APIs for employee CRUD operations and integrated with an Angular frontend for enterprise-style API consumption.",
     image: ems,
     tags: [
       "Java",
@@ -258,10 +274,10 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Hospital Management System",
     description:
-      "A backend-focused hospital management system built using Spring Boot and MySQL. The application exposes secure REST APIs for managing patients, staff, and appointments, following MVC architecture with strong validation and backend security.",
+      "A backend-focused hospital management system built using Spring Boot and MySQL, exposing secure REST APIs for managing patients, staff, and appointments with strong validation and MVC architecture.",
     image: hms,
     tags: [
       "Java",
@@ -274,10 +290,10 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "CricBuzz Clone",
     description:
-      "A frontend clone of the CricBuzz platform built using HTML, CSS, and JavaScript to replicate live scores, match schedules, and responsive layouts. This project demonstrates UI structuring and DOM manipulation skills.",
+      "A responsive frontend clone of the CricBuzz platform built using HTML, CSS, and JavaScript. Replicates live scores, match schedules, and layouts, demonstrating DOM manipulation and responsive UI design.",
     image: cricbuzz,
     tags: [
       "HTML",
@@ -288,6 +304,7 @@ export const projects = [
     github: "https://github.com/VijaySingh8650/cricbuzz"
   }
 ];
+
 
 
 export const certificates = [
