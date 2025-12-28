@@ -13,13 +13,18 @@ import firebaseLogo from './assets/tech_logo/firebase.png';
 import javaLogo from './assets/tech_logo/java.png';
 import typescriptLogo from './assets/tech_logo/typescript.png';
 import githubLogo from './assets/tech_logo/github.png';
+import gitLogo from './assets/tech_logo/gitLogo.png';
+import dockerLogo from './assets/tech_logo/dockerLogo.png';
+dockerLogo
+
 import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
 import figmaLogo from './assets/tech_logo/figma.png';
 import postgreLogo from './assets/tech_logo/postgre.png';
 import hb from './assets/company_logo/hb.jpg'
-import nursaryLogo from './assets/tech_logo/npm.png'
-
+import nursaryLogo from './assets/tech_logo/npm.png';
+import fitnessAiMicroservices from './assets/tech_logo/fitnessAiMicroservices.png';
+import kafkaLogo from './assets/tech_logo/kafkaLogo.png';
 // Education Section Logo's
 import glaLogo from './assets/education_logo/gla_logo.png';
 import bsaLogo from './assets/education_logo/bsa_logo.png';
@@ -32,86 +37,97 @@ import fbApi from './assets/tech_logo/fbApi.jpg';
 import cricbuzz from './assets/tech_logo/cricbuzz.png';
 import hms from './assets/tech_logo/hms.png';
 import ems from './assets/tech_logo/ems.png';
-import se from './assets/tech_logo/se.png'
+import se from './assets/tech_logo/se.png';
+
 
 export const SkillsInfo = [
   {
-    title: 'Frontend',
+    title: "Backend",
     skills: [
-      { name: 'HTML', logo: htmlLogo },
-      { name: 'CSS', logo: cssLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
-      { name: 'React JS', logo: reactjsLogo },
-      { name: 'Redux', logo: reduxLogo },
-      { name: 'Tailwind CSS', logo: tailwindcssLogo },
-      { name: 'Material UI', logo: materialuiLogo },
-      { name: 'Bootstrap', logo: bootstrapLogo },
+      { name: "Java", logo: javaLogo },
+      { name: "Spring Boot", logo: springbootLogo },
+      { name: "Spring Framework", logo: spring },
+      { name: "Hibernate / JPA", logo: hibernate },
+      { name: "Apache Kafka", logo: kafkaLogo }, // strongly recommended
+      { name: "MySQL", logo: mysqlLogo },
+      { name: "PostgreSQL", logo: postgreLogo },
+      { name: "Firebase", logo: firebaseLogo },
+      { name: "AWS", logo: aws },
     ],
   },
+
   {
-    title: 'Backend',
+    title: "Frontend (Integration)",
     skills: [
-      { name: 'Springboot', logo: springbootLogo },
-      { name: 'Spring', logo: spring },
-      { name: 'Hibernate', logo: hibernate },
-      { name: 'Firebase', logo: firebaseLogo },
-      { name: 'PostgreSQL', logo: postgreLogo },
-      { name: 'MySQL', logo: mysqlLogo },
-      { name: 'AWS', logo: aws }
+      { name: "React.js", logo: reactjsLogo },
+      { name: "Redux", logo: reduxLogo },
+      { name: "HTML", logo: htmlLogo },
+      { name: "CSS", logo: cssLogo },
+      { name: "JavaScript", logo: javascriptLogo },
+      { name: "Tailwind CSS", logo: tailwindcssLogo },
+      { name: "Material UI", logo: materialuiLogo },
+      { name: "Bootstrap", logo: bootstrapLogo },
     ],
   },
+
   {
-    title: 'Languages',
+    title: "Languages",
     skills: [
-      { name: 'Java', logo: javaLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
-      { name: 'TypeScript', logo: typescriptLogo },
+      { name: "Java", logo: javaLogo },
+      { name: "JavaScript", logo: javascriptLogo },
+      { name: "TypeScript", logo: typescriptLogo }
     ],
   },
+
   {
-    title: 'Tools',
+    title: "Tools & DevOps",
     skills: [
-      { name: 'IntelliJ', logo: intelliJ },
-      { name: 'GitHub', logo: githubLogo },
-      { name: 'VS Code', logo: vscodeLogo },
-      { name: 'Postman', logo: postmanLogo },
-      { name: 'Figma', logo: figmaLogo },
+      { name: "IntelliJ IDEA", logo: intelliJ },
+      { name: "Git", logo: gitLogo },
+      { name: "GitHub", logo: githubLogo },
+      { name: "Postman", logo: postmanLogo },
+      { name: "Docker", logo: dockerLogo }, // add if you use it
+      { name: "VS Code", logo: vscodeLogo },
+      { name: "Figma", logo: figmaLogo },
     ],
   },
 ];
 
-export const experiences = [{
-  id: 0,
-  img: hb, // make sure you have this logo imported or defined
-  role: "Software Developer",
-  company: "Hostbooks Limited",
-  date: "January 2023 - Present\n Gurugram, Haryana",
-  desc: "Contributed to the development of scalable enterprise-level financial software. Played a key role in building robust backend services, designing responsive UI components, and integrating secure APIs. Actively participated in sprint planning, code reviews, and performance tuning to deliver reliable and efficient solutions.",
-  skills: [
-    // Backend
-    "Java",
-    "SpringBoot",
-    "MicroServices",
-    "Kafka",
-    "REST APIs",
 
-    // Frontend
-    "React JS",
-    "HTML",
-    "CSS",
+export const experiences = [
+  {
+    id: 0,
+    img: hb, // HostBooks logo
+    role: "Software Developer (Backend)",
+    company: "HostBooks Limited",
+    date: "January 2023 – Present | Gurugram, Haryana",
+    desc: 
+      "Working as a Backend Software Developer on enterprise-grade financial applications. Responsible for designing and developing scalable RESTful APIs using Java and Spring Boot, implementing microservices architecture, and integrating asynchronous communication using Apache Kafka. Actively involved in performance optimization, secure API design, database interactions, and collaborative agile development including sprint planning, code reviews, and production support.",
+    skills: [
+      // Backend
+      "Java",
+      "Spring Boot",
+      "Microservices Architecture",
+      "RESTful APIs",
+      "Apache Kafka",
 
-    // Database
-    "MySql",
-    "Sqlite",
-    "FireBase",
+      // Database
+      "MySQL",
+      "SQLite",
+      "Firebase",
 
-    // Deployment / DevOps
-    "AWS",
-    "Git",
-  ],
-}];
+      // Frontend (Basic / Integration)
+      "React.js",
+      "HTML",
+      "CSS",
 
-
+      // Tools & DevOps
+      "AWS",
+      "Git",
+      "Agile / Scrum"
+    ],
+  },
+];
 
 
 export const education = [
@@ -156,100 +172,175 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "ShopEase - E-commerce Platform",
+    title: "Fitness AI Microservices",
     description:
-      "ShopEase is a full-stack e-commerce web application built using React, Redux, Java, Spring Boot, and MySQL. It offers a seamless shopping experience with features like user authentication, product browsing, shopping cart, order management, and role-based access for admins and customers. The backend exposes secure RESTful APIs with robust data handling using Spring and Hibernate, while the frontend delivers dynamic and responsive UI powered by Redux for state management.",
-    image: se, // Replace with actual ShopEase logo or placeholder
-    tags: ["React", "Redux", "Java", "Spring Boot", "MySQL", "Hibernate", "REST API"],
-    github: "https://github.com/TheAftabAlam/e-commerce"
+      "A full-stack AI-powered fitness platform built using Spring Boot microservices with event-driven communication via Apache Kafka. It manages users and activity tracking while generating intelligent fitness recommendations using AI integration. The backend follows database-per-service architecture using MySQL and MongoDB, demonstrating scalable, production-ready microservices with clean separation of concerns.",
+    image: fitnessAiMicroservices,
+    tags: [
+      "Java",
+      "Spring Boot",
+      "Microservices",
+      "Kafka",
+      "AI Integration",
+      "MongoDB",
+      "MySQL",
+      "Event-Driven Architecture"
+    ],
+    github: "https://github.com/TheAftabAlam/fitness-ai-microservices"
   },
+
   {
     id: 1,
-    title: "Nursery Plant API",
+    title: "Social Media API (Kafka-based)",
     description:
-      "A robust backend RESTful API developed using Spring Boot, Spring Framework, MySQL, and Hibernate. This API powers a nursery management system, enabling efficient handling of plant inventory, categories, customer orders, and authentication. It provides scalable endpoints for CRUD operations, user roles, and secure data persistence, making it ideal for modern plant nursery applications.",
-    image: nursaryLogo,
-    tags: ["Java", "Spring Boot", "Spring", "MySQL", "Hibernate", "REST API"],
-    github: "https://github.com/TheAftabAlam/Nursary-Plant-Api"
+      "A microservices-based messaging system built using Spring Boot and Apache Kafka. This project demonstrates real-time data streaming through Kafka producers and consumers, enabling asynchronous communication between services with fault tolerance, logging, and error handling. Designed for scalable, event-driven backend systems.",
+    image: fbApi,
+    tags: [
+      "Java",
+      "Spring Boot",
+      "Kafka",
+      "Microservices",
+      "Event-Driven",
+      "Messaging Systems"
+    ],
+    github: "https://github.com/TheAftabAlam/FaceBook-API"
   },
+
   {
     id: 2,
-    title: "CricBuzz Clone",
+    title: "ShopEase - E-commerce Platform",
     description:
-      "A front-end clone of the popular cricket platform CricBuzz, built using HTML, CSS, and JavaScript. This project replicates core features such as live scores, match schedules, and news layouts. Designed with a responsive UI and attention to detail to mimic the real-world application experience.",
-    image: cricbuzz, // Replace with the actual imported logo or a placeholder
-    tags: ["HTML", "CSS", "JavaScript", "DOM Manipulation", "Responsive Design"],
-    github: "https://github.com/VijaySingh8650/cricbuzz"
-
+      "A full-stack e-commerce application with a strong backend built using Java, Spring Boot, Hibernate, and MySQL. It provides secure RESTful APIs for authentication, product management, cart handling, and order processing, along with role-based access control. Designed for scalable backend data handling and clean API architecture.",
+    image: se,
+    tags: [
+      "Java",
+      "Spring Boot",
+      "Hibernate",
+      "MySQL",
+      "REST API",
+      "Authentication",
+      "Role-Based Access"
+    ],
+    github: "https://github.com/TheAftabAlam/e-commerce"
   },
+
   {
     id: 3,
-    title: "Employee Management System",
+    title: "Nursery Plant API",
     description:
-      "A full-stack web application built with Angular and Spring Boot to manage employee records efficiently. Features include CRUD operations, form validation, routing, and integration with a RESTful backend. This project demonstrates solid implementation of MVC architecture, secure API handling, and seamless front-to-back communication.",
-    image: ems, // Replace with the actual imported logo or placeholder
-    tags: ["Spring Boot", "Java", "MySQL", "REST API", "Angular", "TypeScript",],
-    github: "https://github.com/TheAftabAlam/EmployeeManagement-Springboot-Angular-"
-
+      "A backend RESTful API developed using Spring Boot, Hibernate, and MySQL for managing plant inventory, categories, customer orders, and authentication. The system exposes scalable CRUD endpoints with secure data persistence, following clean layered architecture principles.",
+    image: nursaryLogo,
+    tags: [
+      "Java",
+      "Spring Boot",
+      "Hibernate",
+      "MySQL",
+      "REST API",
+      "Backend Development"
+    ],
+    github: "https://github.com/TheAftabAlam/Nursary-Plant-Api"
   },
+
   {
     id: 4,
-    title: "Hospital Management System",
+    title: "Employee Management System",
     description:
-      "A full-stack Hospital Management System developed using Angular and Spring Boot. This application enables efficient handling of hospital operations including staff management, patient records, and appointment scheduling. Key features include secure CRUD operations, client-side form validation, dynamic routing, and robust RESTful API integration. The project follows the MVC architecture, ensures strong backend security, and delivers seamless communication between frontend and backend.",
-    image: hms, // Replace with the actual imported logo or placeholder
-    tags: ["Spring Boot", "Java", "MySQL", "REST API", "Angular", "TypeScript",],
-    github: "https://github.com/TheAftabAlam/healthcare-management-system"
-
+      "A backend-driven employee management system built using Spring Boot and MySQL, exposing RESTful APIs for employee CRUD operations. Integrated with an Angular frontend to demonstrate secure API communication, MVC architecture, and enterprise-level backend practices.",
+    image: ems,
+    tags: [
+      "Java",
+      "Spring Boot",
+      "REST API",
+      "MySQL",
+      "Angular Integration"
+    ],
+    github: "https://github.com/TheAftabAlam/EmployeeManagement-Springboot-Angular-"
   },
+
   {
     id: 5,
-    title: "Social media api",
+    title: "Hospital Management System",
     description:
-      "A microservices-based messaging system built using Apache Kafka and Spring Boot. This project demonstrates the implementation of Kafka producers and consumers for real-time data streaming and asynchronous communication between services. It features efficient message publishing, consumption, and processing with robust error handling and logging. Ideal for building scalable, event-driven architectures in distributed systems.",
-    image: fbApi, // Replace with the actual imported logo or placeholder
-    tags: ["Spring Boot", "Java", "Kafka", "Microservices", "Event-Driven", "Messaging"],
-    github: "https://github.com/TheAftabAlam/FaceBook-API"
+      "A backend-focused hospital management system built using Spring Boot and MySQL. The application exposes secure REST APIs for managing patients, staff, and appointments, following MVC architecture with strong validation and backend security.",
+    image: hms,
+    tags: [
+      "Java",
+      "Spring Boot",
+      "REST API",
+      "MySQL",
+      "Backend Architecture"
+    ],
+    github: "https://github.com/TheAftabAlam/healthcare-management-system"
+  },
+
+  {
+    id: 6,
+    title: "CricBuzz Clone",
+    description:
+      "A frontend clone of the CricBuzz platform built using HTML, CSS, and JavaScript to replicate live scores, match schedules, and responsive layouts. This project demonstrates UI structuring and DOM manipulation skills.",
+    image: cricbuzz,
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Design"
+    ],
+    github: "https://github.com/VijaySingh8650/cricbuzz"
   }
-];  
+];
+
 
 export const certificates = [
   {
-    title: "Certificate of Appreciation",
-    issuer: "Hostbooks Limited",
+    title: "Heroes of HostBooks",
+    issuer: "HostBooks Limited",
     date: "2024",
-    description: "Awarded for outstanding contribution in handling backend of POS application.",
+    description:
+      "Awarded as a Shining Performer for exceptional contribution, ownership, and impact in delivering high-quality backend solutions for enterprise financial applications.",
+    link: "https://drive.google.com/file/d/1mf2bLgn9AIAqvwrlCuBr-2gIv1nLkyto/view", // replace with actual link
+  },
+  {
+    title: "Certificate of Appreciation",
+    issuer: "HostBooks Limited",
+    date: "2024",
+    description:
+      "Recognized for outstanding contribution in designing and maintaining the backend architecture of a POS application.",
     link: "https://drive.google.com/file/d/15qerB256LoaG5DBwB9KqQZPAaYpCAfMm/view?usp=drive_link",
   },
   {
     title: "Java Backend Development",
     issuer: "Udemy",
     date: "2022",
-    description: "Completed specialization in backend development using Spring Boot & MySQL.",
+    description:
+      "Completed a comprehensive specialization in backend development using Java, Spring Boot, and MySQL.",
     link: "https://www.udemy.com/certificate/UC-338ca492-ddea-418c-b06d-6d06f0650e8b/",
   },
   {
     title: "Java",
     issuer: "HackerRank",
     date: "2022",
-    description: "Demonstrated foundational skills in Java programming.",
+    description:
+      "Certified for strong foundational knowledge and practical skills in Java programming.",
     link: "https://www.hackerrank.com/certificates/ebcaaeb3aba0",
   },
   {
     title: "Problem Solving",
     issuer: "HackerRank",
     date: "2022",
-    description: "Certified for strong logical reasoning and problem-solving skills.",
+    description:
+      "Certified for logical reasoning, data structures, and algorithmic problem-solving skills.",
     link: "https://www.hackerrank.com/certificates/0e54e9bd678e",
   },
   {
     title: "SQL",
     issuer: "HackerRank",
     date: "2022",
-    description: "Certified in SQL fundamentals including queries, joins, and data handling.",
+    description:
+      "Certified in SQL fundamentals including complex queries, joins, and efficient data handling.",
     link: "https://www.hackerrank.com/certificates/1d861790a3fa",
   },
 ];
+
 
 export const menuItems = [
   { id: "about", label: "About" },          // Who you are, quick intro
